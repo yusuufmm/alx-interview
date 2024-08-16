@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-# Solves lock boxes puzzle
+"""Solving the lock boxes puzzle """
 
 
 def look_next_opened_box(opened_boxes):
-    # Find next opened box and return its keys
+    """Finds next opened box and returns its keys """
     for index, box in opened_boxes.items():
         if box.get('status') == 'opened':
             box['status'] = 'opened/checked'
@@ -12,15 +12,17 @@ def look_next_opened_box(opened_boxes):
 
 
 def canUnlockAll(boxes):
-    # Check if all boxes can be opened
+    """Check if all boxes can be opened """
     if len(boxes) <= 1 or boxes == [[]]:
         return True
 
     aux = {}
     while True:
         if len(aux) == 0:
-            aux[0] = {'status': 'opened', 'keys': boxes[0]}
-
+            aux[0] = {
+                'status': 'opened',
+                'keys': boxes[0],
+            }
         keys = look_next_opened_box(aux)
         if keys:
             for key in keys:
@@ -28,7 +30,10 @@ def canUnlockAll(boxes):
                     if aux.get(key) and aux.get(key).get('status') \
                        == 'opened/checked':
                         continue
-                    aux[key] = {'status': 'opened', 'keys': boxes[key]}
+                    aux[key] = {
+                        'status': 'opened',
+                        'keys': boxes[key]
+                    }
                 except (KeyError, IndexError):
                     continue
         elif 'opened' in [box.get('status') for box in aux.values()]:
@@ -42,7 +47,7 @@ def canUnlockAll(boxes):
 
 
 def main():
-    # Entry point
+    """Entry point"""
     canUnlockAll([[]])
 
 
