@@ -2,7 +2,7 @@
 
 # This script processes stdin input, parsing log line
 # It keeps track of total file size and counts
-# The script 
+# The script
 
 import sys
 
