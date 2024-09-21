@@ -11,9 +11,6 @@
 - [Project Tasks](#-project-tasks)
 - [Installation](#-installation)
 - [Usage](#-usage)
-- [Requirements](#-requirements)
-- [Resources](#-resources)
-- [License](#-license)
 
 ## 🌌 Project Overview
 
@@ -68,29 +65,5 @@ Run the script with a movie ID as an argument:
 ```
 
 Replace `<movie_id>` with the desired Star Wars movie ID (e.g., 3 for "Return of the Jedi").
-
-## 📜 Requirements
-
-- Allowed editors: vi, vim, emacs
-- All files interpreted on Ubuntu 20.04 LTS using Node.js (version 10.14.x)
-- All files should end with a new line
-- The first line of all files should be exactly `#!/usr/bin/node`
-- Code should be semistandard compliant
-- All files must be executable
-- You are not allowed to use `var`
-
-## 📚 Resources
-
-- [HTTP Requests in JavaScript](https://www.freecodecamp.org/news/how-to-make-api-calls-with-fetch/)
-- [Working with APIs in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)
-- [Asynchronous Programming in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
-- [Command Line Arguments in Node.js](https://nodejs.org/en/knowledge/command-line/how-to-parse-command-line-arguments/)
-- [JavaScript Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 May the Force be with you! �lightsaber
